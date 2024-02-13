@@ -6,6 +6,7 @@ from astradb_session import initialize_astradb
 
 # Load configurations
 config = dotenv_values('.env')
+print("Loaded config:", config)
 
 # Initialize AstraDB
 vstore = initialize_astradb(config)
